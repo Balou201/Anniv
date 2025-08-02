@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyeux 5 ans d'amitié !</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 40px;
+            max-width: 600px;
+            animation: fadeIn 2s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 200px;
+            height: 200px;
+            background: #ff7e5f;
+            background: linear-gradient(to right, #feb47b, #ff7e5f);
+            border-radius: 50%;
+            opacity: 0.2;
+        }
+        
+        .card::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            right: -50px;
+            width: 150px;
+            height: 150px;
+            background: #a1c4fd;
+            background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+            border-radius: 50%;
+            opacity: 0.2;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: #ff6f61;
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #555;
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        .signature {
+            margin-top: 30px;
+            font-style: italic;
+            font-weight: bold;
+            color: #444;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Joyeux 5 ans d'amitié !</h1>
+        <h2>À Sybille, ma super amie</h2>
+        <p>
+            Cela fait déjà cinq ans que nos chemins se sont croisés, et c'est fou comme le temps passe vite ! Je suis tellement reconnaissant d'avoir une amie comme toi dans ma vie. Tu m'as apporté tellement de joie et de bons souvenirs.
+        </p>
+        <p>
+            Merci pour les rires, les confidences et les moments inoubliables. J'ai hâte de créer encore plein d'autres souvenirs avec toi !
+        </p>
+        <p class="signature">
+            Avec toute mon affection,<br>
+            Gianni
+        </p>
+    </div>
+</body>
+</html>
